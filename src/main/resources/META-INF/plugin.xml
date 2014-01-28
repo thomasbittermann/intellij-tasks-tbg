@@ -1,0 +1,24 @@
+<idea-plugin version="22">
+  <id>The Bug Genie integration</id>
+  <description>Supports integration with The Bug Genie (3.x) issue tracking system. To configure synchronization between an TBG system and IntelliJ IDEA choose type of server and enter credentials. IntelliJ IDEA will automatically synchronize the tasks.
+  </description>
+
+  <name>IntelliJ task integration for The Bug Genie issue tracker</name>
+  <version>1.0</version>
+  <vendor email="thomas@cobonet.de"></vendor>
+  <change-notes>
+    <![CDATA[
+Add change notes here.<br> <small>most HTML tags may be used</small>
+]]>
+  </change-notes>
+
+  <depends>com.intellij.modules.lang</depends>
+  <depends>com.intellij.tasks</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <tasks.repositoryType implementation="task.TBGRepositoryType"/>
+  </extensions>
+
+  <idea-version since-build="109.105"/>
+
+</idea-plugin>
